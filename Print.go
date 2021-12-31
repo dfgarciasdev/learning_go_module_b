@@ -4,7 +4,7 @@ import "fmt"
 
 //PrintLn function for print values
 func PrintLn(values ...interface{}) {
-	for _, v := range values {
-		fmt.Println(v)
+	for i, v := range values {
+		fmt.Printf("Value %v Index %d", v, i)
 	}
 }
